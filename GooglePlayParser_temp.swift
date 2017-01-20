@@ -74,7 +74,6 @@ for line in splitted {
                 let dirPath = path.deletingLastPathComponent?
                     .appendingPathComponent("fastlane")
                     .appendingPathComponent("metadata")
-                    .appendingPathComponent("android")
                     .appendingPathComponent(langCode + "-" + rc)
                 try! FileManager.default.createDirectory(at: dirPath!, withIntermediateDirectories: true, attributes: nil)
                 let currentFilePath = dirPath!.appendingPathComponent(fileName + ".txt")
